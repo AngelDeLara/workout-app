@@ -1,0 +1,11 @@
+# Ignorar node_modules en ambas carpetas
+/backend/node_modules
+/client/node_modules
+
+# Ignorar archivos de entorno
+/backend/.env
+/client/.env
+
+# Ignorar archivos de compilación
+/backend/dist
+/client/build
