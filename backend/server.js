@@ -5,8 +5,24 @@ const mongoose = require('mongoose')
 const workoutRoutes = require('./routes/workouts')
 const userRoutes = require('./routes/user')
 
+const cors = require('cors');
+
+
 // express app
 const app = express()
+
+// Permitir el dominio de Vercel
+const allowedOrigins = [process.env.CLIENT_URL];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 
 // middleware
 app.use(express.json())
