@@ -11,8 +11,8 @@ const cors = require('cors');
 // express app
 const app = express()
 
-// Permitir el dominio de Vercel
-const allowedOrigins = [process.env.CLIENT_URL];
+// Permitir los dominios de Vercel desde el .env
+const allowedOrigins = process.env.CLIENT_URLS.split(',');
 
 app.use(cors({
   origin: function (origin, callback) {
