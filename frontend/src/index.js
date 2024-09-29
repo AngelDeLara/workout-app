@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { WorkoutsContextProvider } from './context/WorkoutsContext';
 import { AuthContextProvider } from './context/AuthContext';
-import { ApiProvider } from './context/APIContext';
+import { ApiProvider } from './context/ApiContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

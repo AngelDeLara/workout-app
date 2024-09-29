@@ -1,7 +1,7 @@
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
 import { formatDistanceToNow } from 'date-fns'
 import { useAuthContext } from '../hooks/useAuthContext'
-import { useApi } from '../context/APIContext'
+import { useApi } from '../context/ApiContext'
 
 const WorkoutDetails = ({ workout }) => {
   const {dispatch} = useWorkoutsContext()

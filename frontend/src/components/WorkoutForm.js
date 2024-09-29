@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from '../hooks/useAuthContext'
-import { useApi } from "../context/APIContext"
+import { useApi } from "../context/ApiContext"
 
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext()
